@@ -1,8 +1,12 @@
-import {h} from "preact";
+import { h } from "preact";
 
 interface HelloProps {
-    compiler: string;
-    framework: string;
+	compiler: string;
+	framework: string;
 }
 
-export const Hello = (props: HelloProps) => <h1>Hello from {props.compiler} and {props.framework}!</h1>;
+export const Hello = (props: HelloProps) => (
+	<h1>
+		Hello from {props.compiler} and {props.framework}!
+	</h1>
+);
