@@ -5,8 +5,10 @@ interface HelloProps {
 	framework: string;
 }
 
-export const Hello = (props: HelloProps) => (
-	<h1>
+const SomeComponent = (props: HelloProps) => (
+	<h1 class="some-component--green">
 		Hello from {props.compiler} and {props.framework}!
 	</h1>
 );
+
+export default SomeComponent;

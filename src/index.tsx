@@ -1,7 +1,8 @@
 import { h, render } from "preact";
-import { Hello } from "./components/Hello";
+import SomeComponent from "./components/SomeComponent/SomeComponent";
+import "./styles/index.scss";
 
 render(
-	<Hello compiler="TypeScript" framework="Preact" />,
+	<SomeComponent compiler="TypeScript" framework="Preact" />,
 	document.querySelector("#root"),
 );
